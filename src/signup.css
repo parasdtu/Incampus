@@ -1,0 +1,225 @@
+#otp{
+    text-decoration: none; color: white;
+}
+body{
+    margin:0px; 
+    padding: 0px;
+}
+.fa {
+    padding: 2%;
+    font-size: 16px;
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.8;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+      border:none;
+  }
+#main{
+    height: 35rem;
+    width: 45rem;
+    border-radius: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 2em;
+    background-color: white;
+}
+.part{
+    height:35rem;
+    width:22.5rem;
+    text-align: center;
+}
+#signin{
+    position:absolute;
+}
+#hello{
+    position:absolute;
+    left:50%;
+    border-radius: 0px 40px 40px 0px;
+    color:white;
+}
+#head{
+    position:relative;
+    top:5%;
+    font-weight:bold;
+    font-size:35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.email{
+    width: 17rem;
+    height: 2.5rem;
+    background-color:#EEEEEE;
+    border:none;
+    padding: 0px 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+}
+.password{
+    width: 17rem;
+    height: 2.5rem;
+    background-color:#EEEEEE;
+    border:none;
+    padding: 0px 1rem 0rem 1rem;
+}
+.number{
+    margin-top:4%;
+    width:17rem;
+    height:2.5rem;
+    background-color:#EEEEEE;
+    border:none;
+    padding: 0px 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+}
+#b1{
+    width:35%;
+    height:8%;
+    border-radius:20px;
+    background-color: #FF464E;
+    color:white;
+    border:none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+.social{
+    color:#484A4F;
+    border:0.1px #484A4F solid; 
+    border-radius:50%;
+    margin:5px;
+    text-decoration: none;
+    height:4.5%;
+    width:9%;
+    padding-top:1.2%
+}
+#h{
+    position: relative;
+    top:25%;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#info{
+    position: relative;
+    top:25%;
+    font-size:120%;
+}
+#b2{
+    width:35%;
+    height:8%;
+    border-radius:20px;
+    background-color: #FF464E;
+    color:white;
+    border:1px solid white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+#welcome{
+    position:absolute;
+    border-radius: 40px 0px 0px 40px;
+    color:white;
+    display:none;
+}
+#w{
+    position: relative;
+    top:25%;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#note{
+    position: relative;
+    top:25%;
+    font-size:120%;
+    margin:0px 20px 0px 20px;
+}
+#b3{
+    width:35%;
+    height:8%;
+    border-radius:20px;
+    background-color: #FF464E;
+    color:white;
+    border:1px solid white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+#create{
+    position:relative;
+    top:5%;
+    font-weight:bold;
+    font-size:35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#b4{
+    width:35%;
+    height:8%;
+    border-radius:20px;
+    background-color: #FF464E;
+    color:white;
+    border:none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+#name{
+    width:17rem;
+    height:2.5rem;
+    background-color:#EEEEEE;
+    border:none;
+    padding: 0px 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+}
+#background{
+    position:absolute;
+    left:50%;
+    height:35rem;
+    width:22.5rem;
+    background-color:#FF464E;
+    z-index:0;
+    border-radius: 0px 40px 40px 0px;
+}
+#signup{
+    position:absolute;
+    left:50%;
+    z-index:10;
+    display:none;
+}
+canvas {
+  display:block;
+  width: 100vw;
+  height: 100vh;
+}
