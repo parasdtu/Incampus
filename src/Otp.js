@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import './Profile.css';
 import image from './OTP anime.gif';
 
+
 class Otp extends Component {
     render(){
         return(

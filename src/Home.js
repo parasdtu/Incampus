@@ -1,5 +1,6 @@
 import React, {Fragment, Component } from 'react';
 import './signup.css';
+import GoogleLogin from "react-google-login";
 
 class Home extends Component {
   signup = () =>{
@@ -20,6 +21,9 @@ class Home extends Component {
     document.getElementById("welcome").style.display = "none";
     document.getElementById("signup").style.display = "none";
   }
+  responseGoogle = (response) => {
+    console.log(response);
+  };
   render(){
       return (
       <Fragment>
@@ -31,7 +35,21 @@ class Home extends Component {
                       <div className="part" id="signin">
                           <p id="head">Sign in</p>
                           <a href="#" className="fa fa-facebook"></a>
-                          <a href="#" className="fa fa-google"></a>
+                          <GoogleLogin
+                            clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                            render={renderProps => (
+                              <a href="#" class="fa fa-google">
+                                <button
+                                  onClick={renderProps.onClick}
+                                  disabled={renderProps.disabled}
+                                />
+                              </a>
+                            )}
+                            buttonText="Login"
+                            onSuccess={this.responseGoogle}
+                            onFailure={this.responseGoogle}
+                            cookiePolicy={"single_host_origin"}
+                          />
                           <a href="#" className="fa fa-linkedin"></a>
                           <p>or use your account</p>
                           <form>
@@ -55,7 +73,7 @@ class Home extends Component {
                       </div>
                       <div className="part" id="signup">
                           <p id="create">Create Account</p>
-                          <a href="#" className="fa fa-facebook social"></a>
+                          <a href="#" className="fa fa-facebook"></a>
                           <a href="#" className="fa fa-google social"></a>
                           <a href="#" className="fa fa-linkedin social"></a>
                           <p>or use your account</p>
