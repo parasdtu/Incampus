@@ -5,15 +5,6 @@ import { Button,Card } from 'react-bootstrap';
 
 class Otp extends Component {
 
-    moveNext = (elem) => {
-        setTimeout(function(){ console.log($(elem).val()); }, 500);
-        if($(elem).val() === "") {
-            
-            $(elem).prev().focus();
-        } else {
-            $(elem).next().focus();
-        }
-}
     render(){
         return(
             <Fragment>
