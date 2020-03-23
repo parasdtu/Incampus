@@ -1,17 +1,27 @@
 import React, {Component, Fragment} from 'react';
 import './Profile.css';
 import image from './OTP anime.gif';
-
+import { Button,Card } from 'react-bootstrap';
 
 class Otp extends Component {
+
+    moveNext = (elem) => {
+        setTimeout(function(){ console.log($(elem).val()); }, 500);
+        if($(elem).val() === "") {
+            
+            $(elem).prev().focus();
+        } else {
+            $(elem).next().focus();
+        }
+}
     render(){
         return(
             <Fragment>
                 <canvas id="c"></canvas>
                 <div className="outer">
                     <div className="middle">
-                        <div className="card" id="c">
-                            <div className="card-body">
+                        <Card id="c">
+                            <Card.Body>
                                 <h5 className="card-title" id="heading">Verification</h5>
                                 <img src={image} width = '85%' />
                                 <div className="card-text" id="sent" >Enter the verification Code we just sent you on your phone...</div>
@@ -24,9 +34,9 @@ class Otp extends Component {
                                 <br /><br /><br /><br />
                                 <div id="resend">If you didn't recieve a code! <a href="#" onClick="Generate()" >Resend</a> </div>
                 
-                                <a href="Edit.html" className="btn btn-success" id="success">Verify</a>
-                            </div>
-                        </div>
+                                <Button className="btn btn-success" id="success"><a href="Edit.html" style= {{color:"white",textDecoration:"none"}}>Verify</a></Button>
+                            </Card.Body>
+                        </Card>
                     </div>
                 </div>
             </Fragment>
