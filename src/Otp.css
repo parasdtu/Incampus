@@ -1,0 +1,73 @@
+.card{
+    margin-right:auto;
+    margin-left: auto;
+    padding-top: 1%;
+}
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.input{
+    width: 10%;
+    float: left;
+    margin:7%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.input:focus{
+    outline: none;
+    text-align: "center"
+}
+.card-body{
+    text-align: center;
+}
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.btn{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#resend{
+  padding-bottom: 6%;
+  letter-spacing: 1.1px; 
+  color: darkgrey;
+}
+#c{
+  width: 25rem;
+  height:37rem;
+  border-radius: 2em;
+}
+#heading{
+  font-family: 'Muli', sans-serif;
+  font-weight: 1000;
+  font-size: 32px;
+}
+#sent{
+  font-family: 'Muli', sans-serif; 
+  padding-top: 6%; 
+  letter-spacing: 0.5px;
+}
+#resend{
+  padding-bottom: 6%; 
+  letter-spacing: 1.1px; 
+  color: darkgray;
+}
+#success{
+  padding: 3% 10% 4% 10%; 
+  border-radius: 1.6em;
+  letter-spacing: 1.1px;
+}

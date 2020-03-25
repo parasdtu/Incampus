@@ -1,9 +1,13 @@
 import React, {Component, Fragment} from 'react'
+import './Profile.css';
+import image from './SecProfilePic.jpg';
+import logo from './Logo.PNG';
 
 class Profile extends Component{
     render(){
         return (
             <Fragment>
+            <header>
                 <nav className="main-nav">
                     <div className="nav-left">
                         <span className="hamburger-parent">
@@ -11,7 +15,7 @@ class Profile extends Component{
                         </span>
                         <span>
                             <a href="#">
-                                <img src="Logo.PNG" style={{borderRadius: '50%', height: "3.5rem", width: "3.5rem"}} />
+                                <img src={logo} style={{borderRadius: '50%', height: "3.5rem", width: "3.5rem"}} />
                             </a>
                         </span>
                     </div>
@@ -42,7 +46,7 @@ class Profile extends Component{
                         </div>
     
                         <div className="round-img">
-                            <img src="SecProfilePic.jpg" alt="profile-pic" /> 
+                            <img src={image} alt="profile-pic" /> 
                         </div>
     
                         <div className="card">
@@ -88,9 +92,9 @@ class Profile extends Component{
     
                     <div className="sidebar sidebar-none" id="change">
                         <i className="close fas fa-times fa-200px"></i>
-                        <div className="upper-half" style="padding-top: 30%;">
+                        <div className="upper-half" style={{paddingTop: "30%" }}>
                             <div className="round-img" >
-                                <img src="SecProfilePic.jpg" alt="profile-pic" /> 
+                                <img src={image} alt="profile-pic" /> 
                             </div>
                             <p>
                                 Hi, Username Goes here
@@ -133,54 +137,55 @@ class Profile extends Component{
                                 </a>
                             </div>
                         </div>
-            <div className="row c-arrangement">
-                <div className="nav-info col-md-3">
-                    <a href="#">
-                        <div className="profile-pic">
-                            <div className="d-flex justify-content-center profile-container">
-                                    <img className="round-img user-pic" src="SecProfilePic.jpg" />
-                            </div>
-                            <div className="card">
-                                    <p className="pointer black">Hi, UserName</p>
+                    </header>
+                    <div className="row c-arrangement">
+                        <div className="nav-info col-md-3">
+                            <a href="#">
+                                <div className="profile-pic">
+                                    <div className="d-flex justify-content-center profile-container">
+                                            <img className="round-img user-pic" src={image} />
+                                    </div>
+                                    <div className="card">
+                                            <p className="pointer black">Hi, UserName</p>
+                        
+                                    </div>
+                                </div>
+                        `   </a>
                 
+                        <div>
+                            <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
+                                <a href="#"><span className="pointer black">MY PROFILE</span></a>
+                            </div>
+                            <div className="separator"></div>
+                            <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
+                                <a href="#"><span className="pointer black">MY ADDRESSES</span></a>
+                            </div>
+                                <div className="separator"></div>
+                            <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
+                                <a href="#"><span className="pointer black">MY FOLLOWERS</span></a>
+                            </div>
+                            <div className="separator"></div>
+                            <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
+                                <a href="#"><span className="pointer black">MY FOLLOWING</span></a>
+                            </div>
+                            <div className="separator"></div>
+                            <div className="separator"></div>
+                            <div className="flex-row faded" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
+                                <a href="#"><span className="pointer black">LOGOUT</span></a>
                             </div>
                         </div>
-                `   </a>
-        
-                <div>
-                <div className="flex-row" style=" font-weight: bold; font-size: 1.4rem; height: 5rem;">
-                    <a href="#"><span className="pointer black">MY PROFILE</span></a>
-                </div>
-                <div className="separator"></div>
-                <div className="flex-row" style=" font-weight: bold; font-size: 1.4rem; height: 5rem;">
-                    <a href="#"><span className="pointer black">MY ADDRESSES</span></a>
-                </div>
-                    <div className="separator"></div>
-                <div className="flex-row" style=" font-weight: bold; font-size: 1.4rem; height: 5rem;">
-                    <a href="#"><span className="pointer black">MY FOLLOWERS</span></a>
-                </div>
-                <div className="separator"></div>
-                <div className="flex-row" style=" font-weight: bold; font-size: 1.4rem; height: 5rem;">
-                    <a href="#"><span className="pointer black">MY FOLLOWING</span></a>
-                </div>
-                <div className="separator"></div>
-                <div className="separator"></div>
-                <div className="flex-row faded" style=" font-weight: bold; font-size: 1.4rem; height: 5rem;">
-                    <a href="#"><span className="pointer black">LOGOUT</span></a>
-                </div>
-            </div>
-          </div>
+                    </div>
     <div className="offset-md-4 col-md-8 c-profile-edit">
     <div className="card">
-        <h1 className="heading" style="color: #428bca; font-family: 'Roboto', sans-serif; font-size: 36px;">
+        <h1 className="heading" id="head" >
             Edit Profile
         </h1>
 
         <form id="edit-form" enctype="multipart/form-data" method="POST">
-            <input type="hidden" name="_csrf" value="">
+            <input type="hidden" name="_csrf" value="" />
                    <div className="row justify-content-between align-items-center profile-row">
                 <div className="round-img">
-                        <img className="round-img user-pic" src="SecProfilePic.jpg">
+                        <img className="round-img user-pic" src={image} />
                 </div>
 
                 <div className="btn btn-primary">
@@ -191,23 +196,23 @@ class Profile extends Component{
             <div className="attributes">
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
                     <div className="label-input col-2">UserID</div>
-                    <input style="padding-left: 1%;" className="input-text col-9" type="text" id="userid" disabled value="XXXXX"/>
+                    <input style={{paddingLeft: "1%"}} className="input-text col-9" type="text" id="userid" disabled value="XXXXX"/>
                 </div>
 
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
                     <div className="label-input col-2">Username</div>
-                    <input style="padding-left: 1%;" type="text" className="input-text col-9" id="username" disabled value="XXXXXXXXXX"/>
+                    <input style={{paddingLeft: "1%"}} type="text" className="input-text col-9" id="username" disabled value="XXXXXXXXXX"/>
                 </div>
 
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
                     <div className="label-input col-2">Firstname</div>
-                    <input style="padding-left: 1%;" type="text" id="firstname" className="input-text col-9" name="firstname"
+                    <input style={{paddingLeft: "1%"}} type="text" id="firstname" className="input-text col-9" name="firstname"
                            value="John"/>
                 </div>
 
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
                     <div className="label-input col-2">Lastname</div>
-                    <input style="padding-left: 1%;" className="input-text col-9" type="text" name="lastname" id="lastname"
+                    <input style={{paddingLeft: "1%"}} className="input-text col-9" type="text" name="lastname" id="lastname"
                            value="Doe"/>
                 </div>
 
@@ -226,11 +231,11 @@ class Profile extends Component{
                 </div>
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
                     <div className="label-input col-2">EDUCATION</div>
-                    <input style="padding-left: 1%;" type="text" id="education" className="input-text col-9" name="education" placeholder="Enter Educational Background"/>
+                    <input style={{paddingLeft: "1%"}} type="text" id="education" className="input-text col-9" name="education" placeholder="Enter Educational Background"/>
                 </div>
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
                     <div className="label-input col-2">Email</div>
-                        <input style="padding-left: 1%;" type="text" id="email" name="email" className="input-text col-9" disabled
+                        <input style={{paddingLeft: "1%"}} type="text" id="email" name="email" className="input-text col-9" disabled
                                value="johnDoe@xmail.com"/>
                 </div>
 
@@ -1196,6 +1201,7 @@ class Profile extends Component{
             </div>
         </form>
     </div>
+</div>
 </div>
             </Fragment>
         )
