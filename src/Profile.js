@@ -4,6 +4,25 @@ import image from './SecProfilePic.jpg';
 import logo from './Logo.PNG';
 
 class Profile extends Component{
+    constructor(props){
+        super(props);
+        
+        this.state={
+            x:1
+        }
+    }
+    ChangeClass = () =>{
+        if(this.state.x%2==1)
+        {
+            document.getElementById("change").className = "sidebar";
+            this.setState({x:this.state.x+1});
+        }
+        else
+            {
+                document.getElementById("change").className = "sidebar sidebar-none";
+                this.setState({x:this.state.x+1});
+            }
+    }
     render(){
         return (
             <Fragment>
@@ -11,7 +30,7 @@ class Profile extends Component{
                 <nav className="main-nav">
                     <div className="nav-left">
                         <span className="hamburger-parent">
-                            <i className="hamburger fas fa-bars" onClick="ChangeClass()"></i>
+                            <i className="hamburger fas fa-bars" onClick={this.ChangeClass}></i>
                         </span>
                         <span>
                             <a href="#">
@@ -176,10 +195,10 @@ class Profile extends Component{
                         </div>
                     </div>
     <div className="offset-md-4 col-md-8 c-profile-edit">
-    <div className="card">
-        <h1 className="heading" id="head" >
-            Edit Profile
-        </h1>
+        <div className="card">
+            <h1 className="heading" id="head" >
+                Edit Profile
+            </h1>
 
         <form id="edit-form" enctype="multipart/form-data" method="POST">
             <input type="hidden" name="_csrf" value="" />
