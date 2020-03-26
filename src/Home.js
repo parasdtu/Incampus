@@ -36,14 +36,12 @@ class Home extends Component {
                           <p id="head">Sign in</p>
                           <a href="#" className="fa fa-facebook"></a>
                           <GoogleLogin
-                            clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                            clientId="744371185181-5d8em7onvuplo19fmq02mgll9sf73cdp.apps.googleusercontent.com"
                             render={renderProps => (
-                              <a href="#" class="fa fa-google">
-                                <button
+                                <a className="fa fa-google"
                                   onClick={renderProps.onClick}
                                   disabled={renderProps.disabled}
                                 />
-                              </a>
                             )}
                             buttonText="Login"
                             onSuccess={this.responseGoogle}
