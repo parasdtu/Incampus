@@ -1,6 +1,7 @@
 import React, {Fragment, Component } from 'react';
 import './signup.css';
 import GoogleLogin from "react-google-login";
+import FacebookLogin from 'react-facebook-login';
 
 class Home extends Component {
   signup = () =>{
@@ -22,8 +23,16 @@ class Home extends Component {
     document.getElementById("signup").style.display = "none";
   }
   responseGoogle = (response) => {
-    console.log(response);
+    console.log(response.accessToken);
   };
+
+  componentClicked = () =>{
+    console.log('logging in');
+  }
+
+  responseFacebook = (response) =>{
+    console.log(response.accessToken);
+  }
   render(){
       return (
       <Fragment>
@@ -48,6 +57,12 @@ class Home extends Component {
                             onFailure={this.responseGoogle}
                             cookiePolicy={"single_host_origin"}
                           />
+                          <FacebookLogin
+                            appId = "505495360359430"
+                            autoLoad = {true}
+                            fields = "name,email,picture"
+                            onClick = {this.componentClicked}
+                            callback = {this.responseFacebook} />
                           <a href="#" className="fa fa-linkedin"></a>
                           <p>or use your account</p>
                           <form>
