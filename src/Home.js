@@ -85,8 +85,27 @@ class Home extends Component {
                       </div>
                       <div className="part" id="signup">
                           <p id="create">Create Account</p>
-                          <a href="#" className="fa fa-facebook"></a>
-                          <a href="#" className="fa fa-google"></a>
+                          <GoogleLogin
+                            clientId="1004316542361-h56kuqs619bkjjt2ti4m1qll28t703jp.apps.googleusercontent.com"
+                            render={renderProps => (
+                                <a className="fa fa-google"
+                                  onClick={renderProps.onClick}
+                                  disabled={renderProps.disabled}
+                                />
+                            )}
+                            buttonText="Login"
+                            onSuccess={this.responseGoogle}
+                            onFailure={this.responseGoogle}
+                            cookiePolicy={"single_host_origin"}
+                          />
+                          <FacebookLogin
+                            appId = "505495360359430"
+                            autoLoad = {true}
+                            fields = "name,email,picture"
+                            onClick = {this.componentClicked}
+                            callback = {this.responseFacebook} 
+                            icon = "fa-facebook"
+                            />
                           <p>or use your account</p>
                           <form action="/user" method="POST">
                               <input type="text" placeholder="Name" id="name" name="name" />
