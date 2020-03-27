@@ -8,6 +8,6 @@ html, body {
     overflow-x: hidden;
 }
 body{
-    background-image: linear-gradient(#8a56ab,#d1bde0); 
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to left,#8a56ab,#d1bde0);
+    background-size: stretch;
 }

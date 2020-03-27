@@ -204,6 +204,7 @@ body{
     margin-bottom: 1rem;
 }
 #background{
+    background-size: cover;
     position:absolute;
     left:50%;
     height:35rem;

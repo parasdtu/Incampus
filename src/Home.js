@@ -42,7 +42,7 @@ class Home extends Component {
                   <div id="main">
                       <div id="background"></div>
                       <div className="part" id="signin">
-                          <p id="head">Sign in</p>
+                          <p id="head" style={{color:"black"}} >Sign in</p>
                           <GoogleLogin
                             clientId="1004316542361-h56kuqs619bkjjt2ti4m1qll28t703jp.apps.googleusercontent.com"
                             render={renderProps => (
@@ -65,9 +65,9 @@ class Home extends Component {
                             icon = "fa-facebook"
                             />
 s                          <p>or use your account</p>
-                          <form>
+                          <form style={{paddingLeft: "10%", paddingRight: "10%"}}>
                               <input type="email" placeholder="Email" className="email" name = "email" />
-                              <input type="password" placeholder="Password" className="password" name = "password" />
+                              <input type="password" placeholder="Password" className="password" name = "password"/>
                               <p>Forgot your password?</p>
                               <button id="b1">Sign In</button>
                           </form>
