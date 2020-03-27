@@ -36,7 +36,6 @@ class Home extends Component {
   render(){
       return (
       <Fragment>
-        <canvas id="c"></canvas>
           <div className="outer">
               <div className="middle">
                   <div id="main">
