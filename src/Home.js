@@ -45,7 +45,7 @@ class Home extends Component {
                           <p id="head">Sign in</p>
                           <a href="#" className="fa fa-facebook"></a>
                           <GoogleLogin
-                            clientId="744371185181-5d8em7onvuplo19fmq02mgll9sf73cdp.apps.googleusercontent.com"
+                            clientId="1004316542361-h56kuqs619bkjjt2ti4m1qll28t703jp.apps.googleusercontent.com"
                             render={renderProps => (
                                 <a className="fa fa-google"
                                   onClick={renderProps.onClick}
