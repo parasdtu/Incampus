@@ -63,7 +63,7 @@ class Home extends Component {
                             callback = {this.responseFacebook} 
                             icon = "fa-facebook"
                             />
-s                          <p>or use your account</p>
+                          <p>or use your account</p>
                           <form style={{paddingLeft: "10%", paddingRight: "10%"}}>
                               <input type="email" placeholder="Email" className="email" name = "email" />
                               <input type="password" placeholder="Password" className="password" name = "password"/>
