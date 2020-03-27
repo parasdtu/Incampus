@@ -8,8 +8,8 @@ body{
 .fa {
     padding: 2%;
     font-size: 16px;
-    height: 1rem;
-    width: 1rem;
+    height: 2rem;
+    width: 2rem;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -223,4 +223,7 @@ canvas {
   display:block;
   width: 100vw;
   height: 100vh;
+}
+.su{
+    text-decoration: none;
 }

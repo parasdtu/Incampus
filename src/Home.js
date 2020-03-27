@@ -86,7 +86,7 @@ s                          <p>or use your account</p>
                       <div className="part" id="signup">
                           <p id="create">Create Account</p>
                           <a href="#" className="fa fa-facebook"></a>
-                          <a href="#" className="fa fa-google social"></a>
+                          <a href="#" className="fa fa-google"></a>
                           <p>or use your account</p>
                           <form action="/user" method="POST">
                               <input type="text" placeholder="Name" id="name" name="name" />
@@ -94,7 +94,7 @@ s                          <p>or use your account</p>
                               <input type="password" placeholder="Password" className="password" name="password" />
                               <input type="text" placeholder="Number" className="number" name="number" maxlength="10" />
                               <p>Forgot your password?</p>
-                              <button id="b4"><a href="/otp" id="opt">Sign Up</a></button>
+                              <button id="b4"><a href="/otp" id="opt" >Sign Up</a></button>
                           </form>
                       </div>
                   </div>
