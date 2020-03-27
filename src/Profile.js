@@ -194,8 +194,8 @@ class Profile extends Component{
                             </div>
                         </div>
                     </div>
-    <div className="offset-md-4 col-md-8 c-profile-edit">
-        <div className="card">
+    <div className="offset-md-4 col-md-8 c-profile-edit" >
+        <div className="card" id="card">
             <h1 className="heading" id="head" >
                 Edit Profile
             </h1>
