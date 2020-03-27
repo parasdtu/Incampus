@@ -64,7 +64,7 @@ class Home extends Component {
                             icon = "fa-facebook"
                             />
                           <p>or use your account</p>
-                          <form style={{paddingLeft: "10%", paddingRight: "10%"}}>
+                          <form style={{paddingLeft: "12%", paddingRight: "12%"}}>
                               <input type="email" placeholder="Email" className="email" name = "email" />
                               <input type="password" placeholder="Password" className="password" name = "password"/>
                               <p>Forgot your password?</p>
@@ -107,7 +107,7 @@ class Home extends Component {
                             icon = "fa-facebook"
                             />
                           <p>or use your account</p>
-                          <form action="/user" method="POST">
+                          <form action="/user" method="POST" style={{paddingLeft: "12%", paddingRight: "12%"}}>
                               <input type="text" placeholder="Name" id="name" name="name" />
                               <input type="email" placeholder="Email" className="email" name="email" />
                               <input type="password" placeholder="Password" className="password" name="password" />
