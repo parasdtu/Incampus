@@ -43,7 +43,6 @@ class Home extends Component {
                       <div id="background"></div>
                       <div className="part" id="signin">
                           <p id="head">Sign in</p>
-                          <a href="#" className="fa fa-facebook"></a>
                           <GoogleLogin
                             clientId="1004316542361-h56kuqs619bkjjt2ti4m1qll28t703jp.apps.googleusercontent.com"
                             render={renderProps => (
@@ -65,8 +64,7 @@ class Home extends Component {
                             callback = {this.responseFacebook} 
                             icon = "fa-facebook"
                             />
-                          <a href="#" className="fa fa-linkedin"></a>
-                          <p>or use your account</p>
+s                          <p>or use your account</p>
                           <form>
                               <input type="email" placeholder="Email" className="email" name = "email" />
                               <input type="password" placeholder="Password" className="password" name = "password" />
@@ -90,7 +88,6 @@ class Home extends Component {
                           <p id="create">Create Account</p>
                           <a href="#" className="fa fa-facebook"></a>
                           <a href="#" className="fa fa-google social"></a>
-                          <a href="#" className="fa fa-linkedin social"></a>
                           <p>or use your account</p>
                           <form action="/user" method="POST">
                               <input type="text" placeholder="Name" id="name" name="name" />
