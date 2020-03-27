@@ -57,6 +57,7 @@ class Home extends Component {
                           />
                           <FacebookLogin
                             appId = "505495360359430"
+                            size = "small"
                             autoLoad = {true}
                             fields = "name,email,picture"
                             onClick = {this.componentClicked}
@@ -100,6 +101,7 @@ class Home extends Component {
                           />
                           <FacebookLogin
                             appId = "505495360359430"
+                            size = "small"
                             autoLoad = {true}
                             fields = "name,email,picture"
                             onClick = {this.componentClicked}
