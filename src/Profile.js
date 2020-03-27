@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import './Profile.css';
+import './profile2.css'
 import image from './SecProfilePic.jpg';
 import logo from './Logo.PNG';
 

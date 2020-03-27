@@ -12,7 +12,3 @@ body{
     background-image: linear-gradient(to left,#8a56ab,#d1bde0);
     background-size: stretch;
 }
-#card{
-    position: relative;
-    top: 4rem;
-}
