@@ -113,7 +113,7 @@ class Home extends Component {
                               <input type="password" placeholder="Password" className="password" name="password" />
                               <input type="text" placeholder="Number" className="number" name="number" maxlength="10" />
                               <p>Forgot your password?</p>
-                              <button id="b4"><a href="/otp" id="opt" >Sign Up</a></button>
+                              <button id="b4"><a href="/otp" id="opt" style={{color: "white", textDecoration: "none"}}>Sign Up</a></button>
                           </form>
                       </div>
                   </div>
