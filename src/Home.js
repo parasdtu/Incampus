@@ -62,7 +62,9 @@ class Home extends Component {
                             autoLoad = {true}
                             fields = "name,email,picture"
                             onClick = {this.componentClicked}
-                            callback = {this.responseFacebook} />
+                            callback = {this.responseFacebook} 
+                            icon = "fa-facebook"
+                            />
                           <a href="#" className="fa fa-linkedin"></a>
                           <p>or use your account</p>
                           <form>
