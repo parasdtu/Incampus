@@ -73,35 +73,35 @@ class Profile extends Component{
                             <div className="top-offset"></div>
                                 <div className="nav-info">
                                     <div className="flex-row justify-content-end">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY PROFILE</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-end">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY ADDRESSES</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-end">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY FOLLOWERS</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-end">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY FOLLOWING</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-end faded">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer">LOGOUT</span>
                                         </a>
                                     </div>
@@ -122,35 +122,35 @@ class Profile extends Component{
                             <div className="top-offset"></div>
                                 <div className="nav-info">
                                     <div className="flex-row justify-content-start">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY PROFILE</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-start">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY ADDRESSES</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-start">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY FOLLOWERS</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                 
                                     <div className="flex-row justify-content-start">
-                                        <a href="#">
+                                        <a href="#" style={{textDecoration: "none"}}>
                                             <span className="pointer ">MY FOLLOWING</span>
                                         </a>
                                     </div>
                                     <div className="separator"></div>
                                 </div>
                                 <br />
-                                <a href="#">
+                                <a href="#" style={{textDecoration: "none"}}>
                                     <div>
                                         <button className="btn btn-primary">Logout</button>
                                     </div>
@@ -160,38 +160,35 @@ class Profile extends Component{
                     </header>
                     <div className="row c-arrangement">
                         <div className="nav-info col-md-3">
-                            <a href="#">
                                 <div className="profile-pic">
                                     <div className="d-flex justify-content-center profile-container">
                                             <img className="round-img user-pic" src={image} />
                                     </div>
                                     <div className="card">
                                             <p className="pointer black">Hi, UserName</p>
-                        
                                     </div>
                                 </div>
-                        `   </a>
                 
                         <div>
                             <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
-                                <a href="#"><span className="pointer black">MY PROFILE</span></a>
+                                <a href="#" style={{textDecoration: "none"}}><span className="pointer black">MY PROFILE</span></a>
                             </div>
                             <div className="separator"></div>
                             <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
-                                <a href="#"><span className="pointer black">MY ADDRESSES</span></a>
+                                <a href="#" style={{textDecoration: "none"}}><span className="pointer black">MY ADDRESSES</span></a>
                             </div>
                                 <div className="separator"></div>
                             <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
-                                <a href="#"><span className="pointer black">MY FOLLOWERS</span></a>
+                                <a href="#" style={{textDecoration: "none"}}><span className="pointer black">MY FOLLOWERS</span></a>
                             </div>
                             <div className="separator"></div>
                             <div className="flex-row" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
-                                <a href="#"><span className="pointer black">MY FOLLOWING</span></a>
+                                <a href="#" style={{textDecoration: "none"}}><span className="pointer black">MY FOLLOWING</span></a>
                             </div>
                             <div className="separator"></div>
                             <div className="separator"></div>
                             <div className="flex-row faded" style={{fontWeight: "bold", fontSize: "1.4rem", height: "5rem"}}>
-                                <a href="#"><span className="pointer black">LOGOUT</span></a>
+                                <a href="#" style={{textDecoration: "none"}}><span className="pointer black">LOGOUT</span></a>
                             </div>
                         </div>
                     </div>
