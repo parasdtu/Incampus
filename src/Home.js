@@ -62,7 +62,7 @@ class Home extends Component {
                             fields = "name,email,picture"
                             onClick = {this.componentClicked}
                             callback = {this.responseFacebook} 
-                            icon = "fa-facebook"
+                            cssClass="fa fa-facebook"
                             />
                           <p>or use your account</p>
                           <form style={{paddingLeft: "12%", paddingRight: "12%"}}>
