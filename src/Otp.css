@@ -17,12 +17,15 @@
   vertical-align: middle;
 }
 .input{
-    width: 10%;
+    width: 10% !important;
     float: left;
     margin:7%;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    border-bottom:1px solid grey !important;
+    background-color: white !important;
+
 }
 
 .input:focus{
