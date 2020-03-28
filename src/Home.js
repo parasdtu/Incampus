@@ -41,7 +41,7 @@ class Home extends Component {
                   <div id="main">
                       <div id="background"></div>
                       <div className="part" id="signin">
-                          <p id="head" style={{color:"black"}} >Sign in</p>
+                          <p id="head" style={{color:"black", marginBottom: "1.8rem"}} >Sign in</p>
                           <GoogleLogin
                             clientId="1004316542361-h56kuqs619bkjjt2ti4m1qll28t703jp.apps.googleusercontent.com"
                             render={renderProps => (
@@ -86,7 +86,7 @@ class Home extends Component {
                           <button id="b3" onClick= {this.signin}>Sign In</button>
                       </div>
                       <div className="part" id="signup">
-                          <p id="create">Create Account</p>
+                          <p id="create" style={{color:"black", marginBottom: "1.8rem"}}>Create Account</p>
                           <GoogleLogin
                             clientId="1004316542361-h56kuqs619bkjjt2ti4m1qll28t703jp.apps.googleusercontent.com"
                             render={renderProps => (
