@@ -69,7 +69,7 @@ class Home extends Component {
                           <form style={{paddingLeft: "12%", paddingRight: "12%"}}>
                               <input type="email" placeholder="Email" className="email" name = "email" />
                               <input type="password" placeholder="Password" className="password" name = "password"/>
-                              <p>Forgot your password?</p>
+                              <p style={{margin:"1.5rem 0rem 1rem 0rem"}}>Forgot your password?</p>
                               <button id="b1">Sign In</button>
                           </form>
                       </div>
