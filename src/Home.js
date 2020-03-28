@@ -56,6 +56,7 @@ class Home extends Component {
                             cookiePolicy={"single_host_origin"}
                           />
                           <FacebookLogin
+                            textButton=""
                             appId = "505495360359430"
                             size = "small"
                             autoLoad = {false}
