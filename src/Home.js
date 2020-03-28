@@ -101,13 +101,15 @@ class Home extends Component {
                             cookiePolicy={"single_host_origin"}
                           />
                           <FacebookLogin
+                            textButton = ""
                             appId = "505495360359430"
                             size = "small"
                             autoLoad = {false}
                             fields = "name,email,picture"
                             onClick = {this.componentClicked}
-                            callback = {this.responseFacebook} 
-                            icon = "fa-facebook"
+                            callback = {this.responseFacebook}
+                            cssClass = "fa fa-facebook"
+                            icon = ""
                             />
                           <p>or use your account</p>
                           <form action="/user" method="POST" style={{paddingLeft: "12%", paddingRight: "12%"}}>
