@@ -1,5 +1,5 @@
 ## NPM libraries to be installed
-react-scripts, react-google-login, react-facebook-login, 
+react-scripts, react-google-login, react-facebook-login
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
