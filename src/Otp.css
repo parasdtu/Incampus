@@ -30,7 +30,7 @@
 
 .input:focus{
     outline: none;
-    text-align: "center"
+    text-align: center !important;
 }
 .card-body{
     text-align: center;
