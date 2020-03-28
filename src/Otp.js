@@ -4,7 +4,11 @@ import image from './OTP anime.gif';
 import { Button,Card } from 'react-bootstrap';
 
 class Otp extends Component {
-
+    Generate()
+    {
+        window.alert("New One Time Password has been sent");
+        document.getElementById('sent').innerHTML = "Enter The new Code that We sent You";
+    }
     render(){
         return(
             <Fragment>
@@ -22,7 +26,7 @@ class Otp extends Component {
                                     <input className="input" type="text" maxlength="1" id="input4" onkeyup="moveNext(this);"  />
                                 </form>
                                 <br /><br /><br /><br />
-                                <div id="resend">If you didn't recieve a code! <a href="#" onClick="Generate()" >Resend</a> </div>
+                                <div id="resend">If you didn't recieve a code! <a href="#" onClick={this.Generate} >Resend</a> </div>
                 
                                 <Button className="btn btn-success" id="success"><a href="/profile" style= {{color:"white",textDecoration:"none"}}>Verify</a></Button>
                             </Card.Body>
