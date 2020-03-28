@@ -105,7 +105,9 @@ body{
 }
 #b1{
     padding: 0.5rem;
-    width:35%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width:42%;
     height:8%;
     border-radius:20px;
     background-color: #FF464E;
@@ -187,7 +189,9 @@ body{
 }
 #b4{
     padding: 0.5rem;
-    width:35%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width:45%;
     height:8%;
     border-radius:20px;
     background-color: #FF464E;
