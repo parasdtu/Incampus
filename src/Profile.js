@@ -212,7 +212,7 @@ class Profile extends Component{
 
             <div className="attributes">
                 <div className="row no-gutters align-items-center justify-content-between detail-row">
-                    <div className="label-input col-2">UserID</div>
+                    <div className="label-input col-2">User ID</div>
                     <input style={{paddingLeft: "1%"}} className="input-text col-9" type="text" id="userid" disabled value="XXXXX"/>
                 </div>
 
