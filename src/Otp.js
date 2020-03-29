@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import './Otp.css';
 import image from './OTP anime.gif';
 import { Button,Card } from 'react-bootstrap';
+import $ from 'jquery';
 
 class Otp extends Component {
     Generate()
@@ -9,6 +10,15 @@ class Otp extends Component {
         window.alert("New One Time Password has been sent");
         document.getElementById('sent').innerHTML = "Enter The new Code that We sent You";
     }
+    moveNext = (e) => {
+        setTimeout(function(){ console.log($(e.target).value); }, 500);
+        if(e.target.value === "") {
+            
+            $(e.target).prev().focus();
+        } else {
+            $(e.target).next().focus();
+        }
+}
     render(){
         return(
             <Fragment>
@@ -20,10 +30,10 @@ class Otp extends Component {
                                 <img src={image} width = '85%' />
                                 <div className="card-text" id="sent" >Enter the verification Code we just sent you on your phone...</div>
                                 <form>
-                                    <input className="input" type="text" maxlength="1" onKeyUp="moveNext(this);" id="input1" />
-                                    <input className="input" type="text" maxlength="1" id="input2" onKeyUp="moveNext(this);" />
-                                    <input className="input" type="text"  maxlength="1" id="input3" onkeyup="moveNext(this);" />
-                                    <input className="input" type="text" maxlength="1" id="input4" onkeyup="moveNext(this);"  />
+                                    <input className="input" type="text" maxlength="1" onKeyUp={this.moveNext} id="input1" />
+                                    <input className="input" type="text" maxlength="1" id="input2" onKeyUp={this.moveNext} />
+                                    <input className="input" type="text"  maxlength="1" id="input3" onKeyUp={this.moveNext} />
+                                    <input className="input" type="text" maxlength="1" id="input4" onKeyUp={this.moveNext}  />
                                 </form>
                                 <br /><br /><br /><br />
                                 <div id="resend">If you didn't recieve a code! <a href="#" onClick={this.Generate} >Resend</a> </div>

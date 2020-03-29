@@ -112,7 +112,7 @@ class Home extends Component {
                             icon = ""
                             />
                           <p>or use your account</p>
-                          <form action="/user" method="POST" style={{paddingLeft: "12%", paddingRight: "12%"}}>
+                          <form method="POST" style={{paddingLeft: "12%", paddingRight: "12%"}}>
                               <input type="text" placeholder="Name" id="name" name="name" />
                               <input type="email" placeholder="Email" className="email" name="email" />
                               <input type="password" placeholder="Password" className="password" name="password" />
